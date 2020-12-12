@@ -31,6 +31,8 @@ var UIController = (function() {
 // GLOBAL APP CONTROLLER
 var controller = (function(budgetCtrl, UICtrl) {
 
+    var DOM = UICtrl.getDOMstrings();
+
     var ctrlAddItem = function() {
 
         // 1- Get the field input data 

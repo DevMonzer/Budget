@@ -11,7 +11,8 @@ var UIController = (function() {
     var DOMstrings = {
         inputType: '.add__type',
         inputDescription: '.add__description',
-        inputValue: '.add__value'
+        inputValue: '.add__value',
+        inputBtn: '.add__btn'
     };
 
     return {
@@ -48,7 +49,7 @@ var controller = (function(budgetCtrl, UICtrl) {
         // 5- Display the budget on the UI
     }
     
-    document.querySelector('.add__btn').addEventListener('click', ctrlAddItem);
+    document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
 
     document.addEventListener('keypress', function(event) {
         if (event.keyCode === 13 || event.which === 13) {

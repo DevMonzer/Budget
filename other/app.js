@@ -18,6 +18,7 @@ var UIController = (function() {
     return {
         getInput: function() {
             return {
+                // to retuurn 3 values we had to use an object 
                 type: document.querySelector(DOMstrings.inputType).value, // Will be either inc or exp
                 description: document.querySelector(DOMstrings.inputDescription).value,
                 value: document.querySelector(DOMstrings.inputValue).value
